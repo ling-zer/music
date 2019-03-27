@@ -1,0 +1,160 @@
+*{
+    margin:0;
+    padding: 0;
+    list-style: none;
+    body{
+        font-size:  14px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center center;
+        .wrapper{
+            width: 100vw;
+            height: 100vh;
+            padding-top: 60px;
+            box-sizing: border-box;
+            background-color: rgba(0,0,0,0.2);
+            position: relative;
+            .song-img{
+                position: relative;
+                width: 70%;
+                height: 0;
+                padding-top: 70%;
+                // border: 1px solid #000;
+                margin: 0 auto;
+                .img-box{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    border-radius: 50%;
+                    background-color: #000;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img{
+                        width: 75%;
+                        height: 75%;
+                        border-radius: 50%;
+
+                    }
+                }
+            }
+            .song-info{
+                margin-top: 20px;
+                width: 100%;
+                height: 126px;
+                text-align: center;
+                // border: 1px solid #000;
+                color:#fff;
+                .song-name{
+                    font-size: 24px;
+                    line-height: 36px;
+                    margin-bottom: 8px;
+                }
+
+            }
+            .pro{
+                display: flex;
+                // position: relative;
+                .cur-time,
+                .all-time{
+                    font-size: 2vh;
+                    width: 60px;
+                    height: 40px;
+                    // border: 1px solid #000;
+                    color: #fff;
+                    text-align: center;
+                    line-height: 40px;
+                    flex-grow: 1;
+                }
+                .pro-wrap{
+                    flex-grow: 3;
+                    // position: absolute;
+                    // border: 1px solid #000;
+                    svg{
+
+                        .bottom{
+                            stroke: #000;
+                            stroke-width: 1px;
+                        }
+                        .over{
+                            stroke: #fff;
+                            opacity: 0.7;
+                            stroke-dasharray: 80;
+                            stroke-dashoffset: 80;
+                        }
+                        circle{
+                            fill:#fff;
+                        }
+                    }
+                }
+             
+            }
+            .control{
+                width: 100%;
+                height: 10%;
+                position: absolute;
+                bottom: 0;
+                background-color: rgba(0,0,0,0.6);
+                display: flex;
+                .btn{
+                    flex: 1;
+                    height: 100%;
+                    // border: 1px solid #000;
+                    background-repeat: no-repeat;
+                    background-size: 20%;
+                    background-position: center center;
+                }
+                .like{
+                    background-image: url(../image/icon-like.png);
+                    &.liking{
+                        background-image: url(../image/icon-like-solid.png);
+                    }
+                }
+                .prev{
+                    background-image: url(../image/icon-prev.png);
+                }
+                .play{
+                    background-image: url(../image/icon-play.png);
+                    &.playing{
+                        background-image: url(../image/icon-pause.png);
+                    }
+                }
+                .next{
+                    background-image: url(../image/icon-next.png);
+                }
+                .list{
+                    background-image: url(../image/icon-list.png);
+                }
+            }
+            .sliderList{
+                width: 100%;
+                height: 50%;
+                border: 1px solid #000;
+                box-sizing: border-box;
+                position: absolute;
+                bottom: 0;
+                // display: none;
+                border-radius: 10px 10px 0px 0px;
+                background-color: #fff;
+                opacity: 0.7;
+                ul{
+                    width: 90%;
+                    height: 90%;
+                    margin: 10px 10px;
+                    li{
+                        border: 1px solid #000;
+                        border-style: none none solid none;
+                        padding: 8px 5px;
+                        font-size: 14px;
+                        color: #000;
+                        &.living{
+                            color: #f22;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
